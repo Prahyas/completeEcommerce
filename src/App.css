@@ -3,4 +3,8 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: "Urbanist", sans-serif;
+  /* outline: 1px solid #f00 !important; */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }

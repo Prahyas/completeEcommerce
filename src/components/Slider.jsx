@@ -17,10 +17,10 @@ const Slider = () => {
   console.log("skideIndex", slideIndex);
 
   return (
-    <div className="wrapper flex w-screen h-[85vh] relative overflow-hidden">
+    <div className="wrapper flex w-full h-[85vh] relative overflow-hidden">
       <div
         onClick={() => handleClick("left")}
-        className="leftArrow bg-black rounded-[50%] h-12 w-12 flex justify-center items-center cursor-pointer opacity-80 absolute top-0 bottom-0 left-2 m-auto z-10"
+        className="leftArrow bg-black rounded-[50%] h-12 w-12 flex justify-center items-center cursor-pointer opacity-80 absolute top-0 bottom-0 left-5 m-auto z-10"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -56,13 +56,13 @@ const Slider = () => {
               
             </div>
             <div className="infoContainer flex-1 p-14">
-              <h1 className="text-5xl">{item.title}</h1>
+              <h1 className="text-6xl">{item.title}</h1>
               <p className="my-9 text-lg font-medium ">{item.desc}</p>
               <button
                 className="p-3 text-xl bg-transparent cursor-pointer border border-black
               "
               >
-                {slideIndex}
+                SHOP NOW
               </button>
             </div>
           </div>
@@ -70,7 +70,7 @@ const Slider = () => {
       </div>
       <div
         onClick={() => handleClick("right")}
-        className="rightArrow bg-black rounded-[50%] h-12 w-12 flex justify-center items-center cursor-pointer opacity-80 absolute top-0 bottom-0 right-2 m-auto z-10"
+        className="rightArrow bg-black rounded-[50%] h-12 w-12 flex justify-center items-center cursor-pointer opacity-80 absolute top-0 bottom-0 right-5 m-auto z-10"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

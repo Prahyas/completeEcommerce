@@ -47,34 +47,34 @@ export const categories = [
 export const popularProducts = [
   {
     id: 1,
-    img: "https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png",
+    img: "https://im.uniqlo.com/global-cms/spa/resa21a851aec87c0097d7fb96b52a600ccfr.jpg",
   },
   {
     id: 2,
-    img: "https://cdn.shopify.com/s/files/1/0101/4832/products/Angela_Natural_Tee.png?v=1606780388",
+    img: "https://im.uniqlo.com/global-cms/spa/resfa6d4b93037025ad20befdb721e3da38fr.jpg",
   },
   {
     id: 3,
-    img: "https://www.prada.com/content/dam/pradanux_products/U/UCS/UCS319/1YOTF010O/UCS319_1YOT_F010O_S_182_SLF.png",
+    img: "https://im.uniqlo.com/global-cms/spa/res1f5cb1d818c09cb9bfa6766cb88cb408fr.jpg",
   },
   {
     id: 4,
-    img: "https://www.burdastyle.com/pub/media/catalog/product/cache/7bd3727382ce0a860b68816435d76e26/107/BUS-PAT-BURTE-1320516/1170x1470_BS_2016_05_132_front.png",
+    img: "https://im.uniqlo.com/global-cms/spa/reseb2504f5a499d2559262d5abc0ff6b20fr.jpg",
   },
   {
     id: 5,
-    img: "https://images.ctfassets.net/5gvckmvm9289/3BlDoZxSSjqAvv1jBJP7TH/65f9a95484117730ace42abf64e89572/Noissue-x-Creatsy-Tote-Bag-Mockup-Bundle-_4_-2.png",
+    img: "https://im.uniqlo.com/global-cms/spa/res429bb2a8fea1715e9fab02cd8e3314c5fr.jpg",
   },
   {
     id: 6,
-    img: "https://d3o2e4jr3mxnm3.cloudfront.net/Rocket-Vintage-Chill-Cap_66374_1_lg.png",
+    img: "https://im.uniqlo.com/global-cms/spa/resa9692041d4996740f67063a484c1d3bbfr.jpg",
   },
   {
     id: 7,
-    img: "https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png",
+    img: "https://im.uniqlo.com/global-cms/spa/res2df76c3fe87fd0de88988fd95cbe58abfr.jpg",
   },
   {
     id: 8,
-    img: "https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
+    img: "https://im.uniqlo.com/global-cms/spa/res4947d4a2626143f235ad04e298356c3afr.jpg",
   },
 ];
