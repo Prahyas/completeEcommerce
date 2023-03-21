@@ -1,19 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { sliderItems } from "../data";
 
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
 
+  let lastIndex = -200;
+
   const handleClick = (direction) => {
     if (direction === "left") {
-      console.log("leftclicked");
-      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
+      setSlideIndex(slideIndex > 0 ? (slideIndex) => slideIndex - 100 : 200);
     } else {
-      setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
+      setSlideIndex(slideIndex < 200 ? (slideIndex) => slideIndex + 100 : 0);
     }
   };
 
-  console.log("slideindex", slideIndex);
+  console.log("skideIndex", slideIndex);
+
   return (
     <div className="wrapper flex w-screen h-[85vh] relative overflow-hidden">
       <div
@@ -37,7 +39,8 @@ const Slider = () => {
       </div>
 
       <div
-        className={`wrapper flex h-full translate-x-[${slideIndex * -100}vw]`}
+        className={`wrapper flex h-full transition-all duration-500 ease-in-out`}
+        style={{ transform: `translateX(-${slideIndex}vw)` }}
       >
         {sliderItems.map((item) => (
           <div
@@ -59,7 +62,7 @@ const Slider = () => {
                 className="p-3 text-xl bg-transparent cursor-pointer border border-black
               "
               >
-                SHOP NOW
+                {slideIndex}
               </button>
             </div>
           </div>
