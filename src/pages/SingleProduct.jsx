@@ -29,27 +29,27 @@ const SingleProduct = () => {
             <div className="flex justify-between items-center">
               <div className="flex gap-3 items-center">
                 <span>Color:</span>
-                <div class="flex space-x-2">
-                  <button class="w-8 h-8  bg-black cursor-pointer border-2 border-black"></button>
-                  <button class="w-8 h-8  bg-white cursor-pointer border-2 border-black"></button>
-                  <button class="w-8 h-8  bg-red-400 cursor-pointer border-2 border-black"></button>
-                  <button class="w-8 h-8  bg-green-400 cursor-pointer border-2 border-black"></button>
-                  <button class="w-8 h-8  bg-blue-400 cursor-pointer border-2 border-black"></button>
+                <div className="flex space-x-2">
+                  <button className="w-8 h-8  bg-black cursor-pointer border-2 border-black"></button>
+                  <button className="w-8 h-8  bg-white cursor-pointer border-2 border-black"></button>
+                  <button className="w-8 h-8  bg-red-400 cursor-pointer border-2 border-black"></button>
+                  <button className="w-8 h-8  bg-green-400 cursor-pointer border-2 border-black"></button>
+                  <button className="w-8 h-8  bg-blue-400 cursor-pointer border-2 border-black"></button>
                 </div>
               </div>
               <div className="flex gap-3 items-center">
                 <span>Sizes: </span>
-                <div class="flex space-x-2">
-                  <button class="w-8 h-8  text-sm bg-transparent cursor-pointer border-2 border-black">
+                <div className="flex space-x-2">
+                  <button className="w-8 h-8  text-sm bg-transparent cursor-pointer border-2 border-black">
                     S
                   </button>
-                  <button class="w-8 h-8  text-sm bg-transparent cursor-pointer border-2 border-black">
+                  <button className="w-8 h-8  text-sm bg-transparent cursor-pointer border-2 border-black">
                     M
                   </button>
-                  <button class="w-8 h-8  text-sm bg-transparent cursor-pointer border-2 border-black">
+                  <button className="w-8 h-8  text-sm bg-transparent cursor-pointer border-2 border-black">
                     L
                   </button>
-                  <button class="w-8 h-8  text-sm bg-transparent cursor-pointer border-2 border-black">
+                  <button className="w-8 h-8  text-sm bg-transparent cursor-pointer border-2 border-black">
                     XL
                   </button>
                 </div>
@@ -59,11 +59,11 @@ const SingleProduct = () => {
             <div className="flex items-center gap-3">
               <span>Quantity: </span>
               <div className="flex items-center gap-3">
-                <button class="w-8 h-8  text-sm bg-transparent cursor-pointer border-2 border-black">
+                <button className="w-8 h-8  text-sm bg-transparent cursor-pointer border-2 border-black">
                   -
                 </button>
                 <input type="number" className="w-20 p-2 border border-black" />
-                <button class="w-8 h-8  text-sm bg-transparent cursor-pointer border-2 border-black">
+                <button className="w-8 h-8  text-sm bg-transparent cursor-pointer border-2 border-black">
                   +
                 </button>
               </div>

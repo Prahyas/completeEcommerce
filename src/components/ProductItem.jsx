@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductItem = ({ item }) => {
   return (
-    <div className="wrapper flex justify-center items-center  h-[300px] w-[320px] relative">
+    <div className="wrapper flex justify-center items-center lg:w-[24%] md:w-[32%]  sm:w-[48%] w-full h-auto relative">
       <img className=" h-full w-full object-contain" src={item.img} alt="" />
       <div className="infocontainer opacity-0 hover:opacity-100 h-full w-full absolute top-0 left-0 flex justify-center items-center gap-3 z-10  transition-all duration-700 ease-in-out">
         <div className="icon w-11 h-11  rounded-[50%] bg-white flex justify-center items-center transition-all duration-200 ease-in-out hover:scale-110 cursor-pointer">

@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="wrapper h-[10vh] p-5 flex items-center">
         <div className="left flex-1 justify-start flex items-center">
           <span className="language text-lg cursor-pointer">EN</span>
-          <div className="searchContainer flex items-center ml-8 border border-gray-400 rounded p-0.5">
+          <div className="searchContainer hidden lg:flex items-center ml-8 border border-gray-400 rounded p-0.5">
             <input className="border-none focus:outline-none" type="text" />
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -27,13 +27,29 @@ const Navbar = () => {
         <div className="center flex-[2_1_0%] text-center">
           <h1 className="text-3xl font-semibold">Ecommerce</h1>
         </div>
-        <div className="right flex-1 flex items-center justify-end gap-5">
+        <div className="flex-1 flex justify-end lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </div>
+        <div className="right flex-1 hidden lg:flex items-center justify-end gap-5">
           <div className="text-lg cursor-pointer">REGISTER</div>
           <div className="text-lg cursor-pointer whitespace-nowrap">
             SIGN IN
           </div>
-          <div class="flex items-center cursor-pointer">
-            <div class="relative">
+          <div className="flex items-center cursor-pointer">
+            <div className="relative">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -49,7 +65,7 @@ const Navbar = () => {
                 />
               </svg>
 
-              <div class="absolute bottom-4 left-5 inline-flex items-center justify-center bg-red-500 text-white rounded-full px-2 py-1 text-xs">
+              <div className="absolute bottom-4 left-5 inline-flex items-center justify-center bg-red-500 text-white rounded-full px-2 py-1 text-xs">
                 3
               </div>
             </div>

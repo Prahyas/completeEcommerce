@@ -30,14 +30,14 @@ const Login = () => {
 
           <div className="flex items-center gap-3">
             <span className="flex-1">Or login with </span>
-            <div class="flex flex-[2_2_0%] space-x-2">
-              <button class="py-2 px-2  text-sm bg-transparent cursor-pointer border-2 border-black">
+            <div className="flex flex-[2_2_0%] space-x-2">
+              <button className="py-2 px-2  text-sm bg-transparent cursor-pointer border-2 border-black">
                 Google
               </button>
-              <button class="py-2 px-2  text-sm bg-transparent cursor-pointer border-2 border-black">
+              <button className="py-2 px-2  text-sm bg-transparent cursor-pointer border-2 border-black">
                 Facebook
               </button>
-              <button class="py-2 px-2  text-sm bg-transparent cursor-pointer border-2 border-black">
+              <button className="py-2 px-2  text-sm bg-transparent cursor-pointer border-2 border-black">
                 Github
               </button>
             </div>

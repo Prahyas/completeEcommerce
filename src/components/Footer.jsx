@@ -2,16 +2,12 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="h-auto bg-black mt-5 flex gap-5 text-white">
+    <div className="h-auto  bg-black mt-5 flex flex-col lg:flex-row gap-5 text-white">
       <div className="item1 flex-1 p-10 flex flex-col gap-5 ">
         <h1 className="text-4xl">Ecommerce</h1>
         <p className="text-sm">
           Our online clothing store offers trendy and fashionable clothing items
-          for both men and women. We have new arrivals and ongoing sales, making
-          us the best place to buy clothes online. With an easy browsing and
-          checkout process, fast shipping, and excellent customer service, we're
-          the perfect destination to upgrade your wardrobe with stylish clothing
-          at affordable prices.
+          for both men and women.
         </p>
         <div className="flex gap-5">
           <img
@@ -34,7 +30,7 @@ const Footer = () => {
 
       <div className="item1 flex-1 p-10 flex flex-col gap-5 ">
         <h1 className="text-2xl">Useful Links</h1>
-        <div className="flex gap-32">
+        <div className="flex justify-between">
           <div className="flex flex-col gap-3">
             <p className="text-base cursor-pointer ">Home</p>
             <p className="text-base cursor-pointer">Mens fashion</p>

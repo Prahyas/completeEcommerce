@@ -2,8 +2,8 @@ import React from "react";
 
 const Newsletter = () => {
   return (
-    <div className="h-[60vh] bg-gray-100 flex flex-col items-center justify-center">
-      <h2 className="text-6xl font-bold text-gray-800 mb-4">
+    <div className="h-[60vh] bg-gray-100 flex flex-col items-center justify-center p-8">
+      <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 mb-4">
         Subscribe to our Newsletter
       </h2>
       <p className="text-lg text-gray-600 mb-8">
