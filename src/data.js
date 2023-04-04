@@ -29,18 +29,27 @@ export const sliderItems = [
 export const categories = [
   {
     id: 1,
-    img: "https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    title: "SHIRT STYLE!",
+    img: "https://im.uniqlo.com/global-cms/spa/resa21a851aec87c0097d7fb96b52a600ccfr.jpg",
+    title: "Jackets & Parkas",
+    cat: "jacket",
   },
   {
     id: 2,
-    img: "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    title: "LOUNGEWEAR LOVE",
+    img: "https://im.uniqlo.com/global-cms/spa/resfa6d4b93037025ad20befdb721e3da38fr.jpg",
+    title: "Ultra Light Down & Warm Padded",
+    cat: "down",
   },
   {
     id: 3,
-    img: "https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    title: "LIGHT JACKETS",
+    img: "https://im.uniqlo.com/global-cms/spa/res1f5cb1d818c09cb9bfa6766cb88cb408fr.jpg",
+    title: "T-Shirts",
+    cat: "tshirt",
+  },
+  {
+    id: 4,
+    img: "https://im.uniqlo.com/global-cms/spa/reseb2504f5a499d2559262d5abc0ff6b20fr.jpg",
+    title: "Graphic Tees",
+    cat: "graphictees",
   },
 ];
 

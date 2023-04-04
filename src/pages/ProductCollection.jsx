@@ -1,65 +1,96 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Announcement from "../components/Announcement";
 import Products from "../components/Products";
+import Newsletter from "../components/Newsletter";
+import Footer from "../components/Footer";
+import ScrollToTop from "../components/Scrolltotop";
+import { useLocation } from "react-router-dom";
 
 const ProductCollection = () => {
+  const [filters, setfilters] = useState({});
+  const [sort, setsort] = useState("newest");
+  const location = useLocation();
+  const cat = location.pathname.split("/")[2];
+
+  const handleFilters = (e) => {
+    setfilters({
+      ...filters,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSort = (e) => {
+    setsort(e.target.value);
+  };
+
+  useEffect(() => {
+    console.log(filters);
+  }, [filters]);
+  useEffect(() => {
+    console.log(sort);
+  }, [sort]);
+
   return (
     <div>
+      <ScrollToTop />
       <Navbar />
       <Announcement />
-      <h1 className="title text-4xl p-8">Dresses</h1>
-      <div className="filterWrapper p-8 flex justify-between items-center">
+      <h1 className="title text-4xl p-8 capitalize">{cat}</h1>
+      <div className="filterWrapper p-8 flex justify-between items-center flex-col md:flex-row gap-6">
         <div className="filter1 flex items-center gap-5 ">
           <p>Filter Products:</p>
           <select
             className="p-2 bg-transparent cursor-pointer border border-black"
-            name="filterSelect1"
+            name="color"
             id=""
+            defaultValue={`Select color`}
+            onChange={handleFilters}
           >
-            <option value="" selected disabled>
-              Select color
-            </option>
-            <option value="">Black</option>
-            <option value="">White</option>
-            <option value="">Red</option>
-            <option value="">Blue</option>
-            <option value="">Yellow</option>
-            <option value="">Green</option>
+            <option disabled>Select color</option>
+            <option>black</option>
+            <option>white</option>
+            <option>red</option>
+            <option>blue</option>
+            <option>yellow</option>
+            <option>green</option>
           </select>
           <select
             className="p-2 bg-transparent cursor-pointer border border-black"
-            name="filterSelect2"
+            name="size"
             id=""
+            defaultValue={`Select size`}
+            onChange={handleFilters}
           >
-            <option value="" selected disabled>
+            <option value="Select size" disabled>
               Select size
             </option>
-            <option value="">XS</option>
-            <option value="">S</option>
-            <option value="">M</option>
-            <option value="">L</option>
-            <option value="">XL</option>
-            <option value="">XXL</option>
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
           </select>
         </div>
         <div className="filter2 flex items-center gap-5">
           <p>Sort products:</p>
           <select
             className="p-2 bg-transparent cursor-pointer border border-black"
-            name="filterSelect2"
+            name="sort"
             id=""
+            defaultValue={`newest`}
+            onChange={handleSort}
           >
-            <option value="" selected disabled>
-              Select option
-            </option>
-            <option value="">Newest</option>
-            <option value="">Price Asc</option>
-            <option value="">Price Dsc</option>
+            <option value="newest">Newest</option>
+            <option value="asc">Price Asc</option>
+            <option value="desc">Price Dsc</option>
           </select>
         </div>
       </div>
-      <Products />
+      <Products cat={cat} filters={filters} sort={sort} />
+
+      <Footer />
     </div>
   );
 };

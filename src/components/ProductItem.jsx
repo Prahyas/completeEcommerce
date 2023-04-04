@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ProductItem = ({ item }) => {
   return (
     <div className="wrapper flex justify-center items-center lg:w-[24%] md:w-[32%]  sm:w-[48%] w-full h-auto relative">
-      <img className=" h-full w-full object-contain" src={item.img} alt="" />
+      <img className="h-full w-full object-contain" src={item.img} alt="" />
+
       <div className="infocontainer opacity-0 hover:opacity-100 h-full w-full absolute top-0 left-0 flex justify-center items-center gap-3 z-10  transition-all duration-700 ease-in-out">
         <div className="icon w-11 h-11  rounded-[50%] bg-white flex justify-center items-center transition-all duration-200 ease-in-out hover:scale-110 cursor-pointer">
           <svg
@@ -22,20 +24,22 @@ const ProductItem = ({ item }) => {
           </svg>
         </div>
         <div className="icon w-11 h-11  rounded-[50%] bg-white flex justify-center items-center transition-all duration-200 ease-in-out hover:scale-110 cursor-pointer">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-            />
-          </svg>
+          <Link to={`/product/${item._id}`}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </Link>
         </div>
         <div className="icon w-11 h-11 rounded-[50%] bg-white flex justify-center items-center transition-all duration-200 ease-in-out hover:scale-110 cursor-pointer">
           <svg

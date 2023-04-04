@@ -17,7 +17,7 @@ const Slider = () => {
   console.log("skideIndex", slideIndex);
 
   return (
-    <div className="wrapper flex lg:h-[85vh] md:h-[50vh] sm:h-[50vh] h-[85vh] relative overflow-hidden">
+    <div className="wrapper flex lg:h-[85vh] md:h-[50vh] sm:h-[50vh] h-auto  relative overflow-hidden ">
       <div
         className={`wrapper flex h-screen sm:h-full transition-all duration-500 ease-in-out`}
         style={{ transform: `translateX(-${slideIndex}vw)` }}
@@ -25,7 +25,7 @@ const Slider = () => {
         {sliderItems.map((item) => (
           <div
             key={item.id}
-            className="slide w-screen h-full flex flex-col md:flex-row items-center mt-5"
+            className="slide w-screen h-full flex flex-col md:flex-row items-center pt-5"
           >
             <div className="imgContainer flex-1 h-full flex justify-center">
               <img
@@ -56,7 +56,7 @@ const Slider = () => {
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          stroke-width="1.5"
+          strokeWidth="1.5"
           stroke="currentColor"
           className="w-5 h-5 text-white"
         >
@@ -76,7 +76,7 @@ const Slider = () => {
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          stroke-width="1.5"
+          strokeWidth="1.5"
           stroke="currentColor"
           className="w-5 h-5 text-white"
         >
