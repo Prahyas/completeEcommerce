@@ -19,6 +19,7 @@ import Footer from "./components/Footer";
 import ProductCollection from "./pages/ProductCollection";
 import ProductItem from "./components/ProductItem";
 import SingleProduct from "./pages/SingleProduct";
+import Success from "./pages/Success";
 
 function App() {
   let user = true;
@@ -40,6 +41,9 @@ function App() {
           </Route>
           <Route path="/cart">
             <Cart />
+          </Route>
+          <Route path="/success">
+            <Success />
           </Route>
           <Route path="/login">{user ? <Redirect to="/" /> : <Login />}</Route>
           <Route path="/register">
