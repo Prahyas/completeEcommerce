@@ -28,6 +28,9 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/">
+            <Login />
+          </Route>
+          <Route path="/home">
             <Home />
           </Route>
           <Route path="/products">

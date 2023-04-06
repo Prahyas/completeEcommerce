@@ -12,9 +12,14 @@ const Products = ({ cat, filters, sort }) => {
     const getProducts = async () => {
       const res = await axios.get(
         cat
-          ? `http://localhost:5000/api/products?category=${cat}`
-          : `http://localhost:5000/api/products`
+          ? `https://complete-ecommerce-back.onrender.com/api/products?category=${cat}`
+          : `https://complete-ecommerce-back.onrender.com/api/products`
       );
+      // const res = await axios.get(
+      //   cat
+      //     ? `http://localhost:5000/api/products?category=${cat}`
+      //     : `http://localhost:5000/api/products`
+      // );
       setProducts(res.data);
     };
     getProducts();
