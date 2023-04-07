@@ -42,7 +42,7 @@ const Success = () => {
         <div className="space-y-5" action="">
           <p className="text-xl text-center">{`Order has been created successfully. Your order number is ${orderId}`}</p>
           <div>
-            <Link to={`/`}>
+            <Link to={`/home`}>
               <button
                 className="p-3 text-xl bg-black text-white w-full cursor-pointer border border-black
               "
